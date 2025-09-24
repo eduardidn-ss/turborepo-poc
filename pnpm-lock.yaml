@@ -61,7 +61,7 @@ importers:
   apps/web:
     dependencies:
       '@repo/ui':
-        specifier: workspace:*
+        specifier: workspace:1.1.0
         version: link:../../packages/ui
       next:
         specifier: ^15.5.0
