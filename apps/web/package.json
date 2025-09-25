@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "workspace:1.1.0",
+    "@eduardidn-ss/repo-ui": "workspace:*",
     "next": "^15.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

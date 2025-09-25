@@ -23,9 +23,9 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/ui':
-        specifier: workspace:1.1.0
-        version: link:../../packages/ui
+      '@eduardidn-ss/repo-ui':
+        specifier: 1.0.2
+        version: 1.0.2
       next:
         specifier: ^15.5.0
         version: 15.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -187,6 +187,9 @@ packages:
 
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
+
+  '@eduardidn-ss/repo-ui@1.0.2':
+    resolution: {integrity: sha512-wtUlAG9xr3Ztn6u4epAAErh78poSIzIxhJNRehIH9YoO1tX0/YCMXvoqgNqR4zSV61X45qFel9vcFY8IZcOBwQ==, tarball: https://npm.pkg.github.com/download/@eduardidn-ss/repo-ui/1.0.2/0c77d795905971ff44cfd0ddf8c42278774236cc}
 
   '@emnapi/runtime@1.4.5':
     resolution: {integrity: sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg==}
@@ -1835,6 +1838,11 @@ snapshots:
       fs-extra: 7.0.1
       human-id: 4.1.1
       prettier: 2.8.8
+
+  '@eduardidn-ss/repo-ui@1.0.2':
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   '@emnapi/runtime@1.4.5':
     dependencies:

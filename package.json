@@ -1,6 +1,10 @@
 {
   "name": "turborepo-poc",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -11,7 +15,7 @@
     "changeset:version": "changeset version",
     "changeset:status": "changeset status",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish",
+    "release": "turbo run build && changeset publish",
     "preinstall": "node scripts/pre-install.js"
   },
   "devDependencies": {

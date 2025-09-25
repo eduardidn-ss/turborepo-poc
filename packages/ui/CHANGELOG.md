@@ -1,7 +1,7 @@
-# @repo/ui
+# @eduardidn-ss/repo-ui
 
-## 1.1.0
+## 1.0.2
 
-### Minor Changes
+### Patch Changes
 
 - Initial Version
