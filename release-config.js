@@ -3,7 +3,7 @@ const RELEASE_CONFIG = {
     "@eduardidn-ss/repo-ui": "workspace:*",
   },
   production: {
-    "@eduardidn-ss/repo-ui": "workspace:1.0.2",
+    "@eduardidn-ss/repo-ui": "1.0.8",
   },
 };
 

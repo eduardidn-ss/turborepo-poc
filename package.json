@@ -15,8 +15,9 @@
     "changeset:version": "changeset version",
     "changeset:status": "changeset status",
     "version-packages": "changeset version",
-    "release": "turbo run build && changeset publish",
-    "preinstall": "node scripts/pre-install.js"
+    "release": "turbo run build --filter='./packages/*' && changeset publish",
+    "install-dependencies": "export RELEASE_ENV=development && node scripts/pre-install.js && pnpm install",
+    "install-dependencies:prod": "export RELEASE_ENV=production && node scripts/pre-install.js && pnpm install"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",

@@ -1,6 +1,8 @@
+"use client";
+
 import Image, { type ImageProps } from "next/image";
 import styles from "./page.module.css";
-import { Button } from "@eduardidn-ss/repo-ui/button";
+import { Button } from "@eduardidn-ss/repo-ui";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;

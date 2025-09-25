@@ -1,5 +1,5 @@
-export const UI_VERSION = "1.2.0";
-export const UI_VERSION_COLOR = "red"; // blue-500 para version 1.0.0
+export const UI_VERSION = "1.0.10";
+export const UI_VERSION_COLOR = "blue"; // blue-500 para version 1.0.0
 
 // Para uso en componentes que quieran mostrar la versión
 export const getVersionInfo = () => ({
