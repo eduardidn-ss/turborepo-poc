@@ -1,104 +1,129 @@
 "use client";
 
-import Image, { type ImageProps } from "next/image";
-import styles from "./page.module.css";
 import { Button } from "@eduardidn-ss/repo-ui";
-
-type Props = Omit<ImageProps, "src"> & {
-  srcLight: string;
-  srcDark: string;
-};
-
-const ThemeImage = (props: Props) => {
-  const { srcLight, srcDark, ...rest } = props;
-
-  return (
-    <>
-      <Image {...rest} src={srcLight} className="imgLight" />
-      <Image {...rest} src={srcDark} className="imgDark" />
-    </>
-  );
-};
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <ThemeImage
-          className={styles.logo}
-          srcLight="turborepo-dark.svg"
-          srcDark="turborepo-light.svg"
-          alt="Turborepo logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>apps/web/app/page.tsx</code>
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "#f8fafc",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "2rem",
+        fontFamily:
+          "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      }}
+    >
+      <div
+        style={{
+          background: "white",
+          borderRadius: "8px",
+          padding: "3rem",
+          boxShadow: "0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06)",
+          border: "1px solid #e2e8f0",
+          maxWidth: "700px",
+          width: "100%",
+          textAlign: "left",
+        }}
+      >
+        <div style={{ marginBottom: "2rem" }}>
+          <h1
+            style={{
+              fontSize: "2rem",
+              fontWeight: "600",
+              margin: "0 0 0.5rem 0",
+              color: "#1e293b",
+              letterSpacing: "-0.025em",
+            }}
+          >
+            Main Application
+          </h1>
+          <div
+            style={{
+              width: "40px",
+              height: "3px",
+              background: "#3b82f6",
+              borderRadius: "2px",
+            }}
+          />
+        </div>
 
-        <div className={styles.ctas}>
+        <p
+          style={{
+            fontSize: "1rem",
+            color: "#64748b",
+            margin: "0 0 2.5rem 0",
+            lineHeight: "1.6",
+          }}
+        >
+          Enterprise micro-frontend architecture demonstration. This application
+          showcases distributed system integration and cross-application
+          navigation patterns.
+        </p>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
+          }}
+        >
           <a
-            className={styles.primary}
-            href="https://vercel.com/new/clone?demo-description=Learn+to+implement+a+monorepo+with+a+two+Next.js+sites+that+has+installed+three+local+packages.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4K8ZISWAzJ8X1504ca0zmC%2F0b21a1c6246add355e55816278ef54bc%2FBasic.png&demo-title=Monorepo+with+Turborepo&demo-url=https%3A%2F%2Fexamples-basic-web.vercel.sh%2F&from=templates&project-name=Monorepo+with+Turborepo&repository-name=monorepo-turborepo&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fturborepo%2Ftree%2Fmain%2Fexamples%2Fbasic&root-directory=apps%2Fdocs&skippable-integrations=1&teamSlug=vercel&utm_source=create-turbo"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/demo-zone"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              background: "#3b82f6",
+              color: "white",
+              padding: "12px 20px",
+              borderRadius: "6px",
+              textDecoration: "none",
+              fontWeight: "500",
+              fontSize: "0.95rem",
+              transition: "all 0.2s ease",
+              border: "1px solid #2563eb",
+            }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            <span style={{ marginRight: "8px" }}>→</span>
+            Navigate to Demo Zone
           </a>
+
           <a
-            href="https://turborepo.com/docs?utm_source"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
+            href="/demo-zone/demo"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              background: "white",
+              color: "#374151",
+              padding: "12px 20px",
+              borderRadius: "6px",
+              textDecoration: "none",
+              fontWeight: "500",
+              fontSize: "0.95rem",
+              transition: "all 0.2s ease",
+              border: "1px solid #d1d5db",
+            }}
           >
-            Read our docs
+            <span style={{ marginRight: "8px" }}>→</span>
+            Access Demo Zone Subpath
           </a>
         </div>
-        <Button appName="web" className={styles.secondary} showVersion={true}>
-          Open alert
-        </Button>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com/templates?search=turborepo&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <div
+          style={{
+            marginTop: "2rem",
+            padding: "1rem",
+            background: "#f1f5f9",
+            borderRadius: "6px",
+            border: "1px solid #e2e8f0",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://turborepo.com?utm_source=create-turbo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to turborepo.com →
-        </a>
-      </footer>
+          <Button appName="web">Click me</Button>
+        </div>
+      </div>
     </div>
   );
 }
