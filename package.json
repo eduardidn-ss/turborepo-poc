@@ -17,7 +17,14 @@
     "version-packages": "changeset version",
     "release": "turbo run build --filter='./packages/*' && changeset publish",
     "install-dependencies": "export RELEASE_ENV=development && node scripts/pre-install.js && pnpm install",
-    "install-dependencies:prod": "export RELEASE_ENV=production && node scripts/pre-install.js && pnpm install"
+    "install-dependencies:prod": "export RELEASE_ENV=production && node scripts/pre-install.js && pnpm install",
+    "preinstall": "node scripts/select-package-version.js",
+    "install:dev": "export NODE_ENV=development && pnpm install",
+    "install:prod": "export NODE_ENV=production && pnpm install",
+    "setup-github-auth": "node scripts/setup-github-auth.js",
+    "build:dev": "NODE_ENV=development pnpm install && pnpm run build",
+    "build:prod": "NODE_ENV=production pnpm install && pnpm run build"
+
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",

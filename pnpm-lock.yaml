@@ -58,11 +58,48 @@ importers:
         specifier: ^5
         version: 5.9.2
 
+  apps/film:
+    dependencies:
+      '@sumer/film':
+        specifier: workspace:*
+        version: link:../../packages/film
+      next:
+        specifier: 15.5.4
+        version: 15.5.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+    devDependencies:
+      '@eslint/eslintrc':
+        specifier: ^3
+        version: 3.3.1
+      '@types/node':
+        specifier: ^20
+        version: 20.19.19
+      '@types/react':
+        specifier: ^19
+        version: 19.1.0
+      '@types/react-dom':
+        specifier: ^19
+        version: 19.1.1(@types/react@19.1.0)
+      eslint:
+        specifier: ^9
+        version: 9.34.0
+      eslint-config-next:
+        specifier: 15.5.4
+        version: 15.5.4(eslint@9.34.0)(typescript@5.9.2)
+      typescript:
+        specifier: ^5
+        version: 5.9.2
+
   apps/web:
     dependencies:
       '@eduardidn-ss/repo-ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
+        specifier: 1.0.9
+        version: 1.0.9
       next:
         specifier: ^15.5.0
         version: 15.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -97,6 +134,9 @@ importers:
 
   packages/film:
     dependencies:
+      '@eduardidn-ss/repo-ui':
+        specifier: 1.0.9
+        version: 1.0.9
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -261,6 +301,9 @@ packages:
 
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
+
+  '@eduardidn-ss/repo-ui@1.0.9':
+    resolution: {integrity: sha512-MZang9z4ueQfm7SUxlxpeGmS/PaKz4yVY5JkZ+AA/0mhE+ZPJY7c0ezKY4M4zb3tn96UkgyMjETyo4MWT4rN+g==, tarball: https://npm.pkg.github.com/download/@eduardidn-ss/repo-ui/1.0.9/1b3945ba2f81882f17232a6e7afdf949948d0419}
 
   '@emnapi/core@1.5.0':
     resolution: {integrity: sha512-sbP8GzB1WDzacS8fgNPpHlp6C9VZe+SJP3F90W9rLemaQj2PzIuTEl1qDOYQf58YIpyjViI24y9aPWCjEzY2cg==}
@@ -2783,6 +2826,11 @@ snapshots:
       fs-extra: 7.0.1
       human-id: 4.1.1
       prettier: 2.8.8
+
+  '@eduardidn-ss/repo-ui@1.0.9':
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   '@emnapi/core@1.5.0':
     dependencies:

@@ -1,9 +1,9 @@
 const RELEASE_CONFIG = {
   development: {
-    "@eduardidn-ss/repo-ui": "workspace:*",
+    "@eduardidn-ss/repo-ui": "1.0.9",
   },
   production: {
-    "@eduardidn-ss/repo-ui": "1.0.8",
+    "@eduardidn-ss/repo-ui": "1.0.6",
   },
 };
 

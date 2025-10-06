@@ -110,6 +110,26 @@ export default function Home() {
             <span style={{ marginRight: "8px" }}>→</span>
             Access Demo Zone Subpath
           </a>
+
+          <a
+            href="/film"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              background: "white",
+              color: "#374151",
+              padding: "12px 20px",
+              borderRadius: "6px",
+              textDecoration: "none",
+              fontWeight: "500",
+              fontSize: "0.95rem",
+              transition: "all 0.2s ease",
+              border: "1px solid #d1d5db",
+            }}
+          >
+            <span style={{ marginRight: "8px" }}>→</span>
+            Access Film Subpath
+          </a>
         </div>
 
         <div
