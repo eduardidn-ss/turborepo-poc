@@ -3,7 +3,10 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "apps/*"
+    "packages/film/*",
+    "apps/*",
+    "libs/*",
+    "features/*"
   ],
   "scripts": {
     "build": "turbo run build",
@@ -24,7 +27,6 @@
     "setup-github-auth": "node scripts/setup-github-auth.js",
     "build:dev": "NODE_ENV=development pnpm install && pnpm run build",
     "build:prod": "NODE_ENV=production pnpm install && pnpm run build"
-
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",

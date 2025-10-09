@@ -1,4 +1,4 @@
-import { FilmComponent } from "@sumer/film";
+import { FilmComponent } from "@sumer/film-core";
 
 export default function DemoPage() {
   return (

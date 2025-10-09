@@ -1,4 +1,7 @@
 packages:
   - "apps/*"
   - "packages/*"
+  - "packages/film/*"
   - "settings/*"
+  - "libs/*"
+  - "features/*"
