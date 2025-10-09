@@ -1,0 +1,13 @@
+graph TD
+	QHZT("@eduardidn-ss/repo-ui#build") --> ETTT("@repo/eslint-config#build")
+	QHZT("@eduardidn-ss/repo-ui#build") --> JEGP("@repo/typescript-config#build")
+	ETTT("@repo/eslint-config#build") --> EMLE("___ROOT___")
+	JEGP("@repo/typescript-config#build") --> EMLE("___ROOT___")
+	LRHC("@sumer/film-core#build") --> ETTT("@repo/eslint-config#build")
+	LRHC("@sumer/film-core#build") --> JEGP("@repo/typescript-config#build")
+	GLAO("@sumer/film-nfl#build") --> ETTT("@repo/eslint-config#build")
+	GLAO("@sumer/film-nfl#build") --> JEGP("@repo/typescript-config#build")
+	VELR("demo-zone#build") --> LRHC("@sumer/film-core#build")
+	TXWC("film#build") --> LRHC("@sumer/film-core#build")
+	WCIN("web#build") --> ETTT("@repo/eslint-config#build")
+	WCIN("web#build") --> JEGP("@repo/typescript-config#build")

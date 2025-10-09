@@ -1,4 +1,5 @@
-import { FilmComponent } from "@sumer/film";
+import { FilmComponent } from "@sumer/film-core";
+import { FilmFeatureComponent } from "@sumer/film-feature";
 
 export default function Home() {
   return (
@@ -41,6 +42,8 @@ export default function Home() {
         </h2>
         <FilmComponent />
       </div>
+
+      <FilmFeatureComponent />
 
       <div style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#888" }}>
         <p>

@@ -1,6 +1,6 @@
 {
-  "name": "@sumer/film",
-  "version": "1.0.0",
+  "name": "@sumer/film-feature",
+  "version": "1.0.9",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@storybook/react": "^9.1.10",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
@@ -37,7 +38,6 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "@eduardidn-ss/repo-ui": "1.0.9"
+    "react-dom": "^19.1.0"
   }
 }
